@@ -44,6 +44,12 @@ function main() {
 	
   	// Portfolio isotope filter
     $(window).load(function() {
+        var navHeight = $(window).height() - 500;
+        if ($(window).scrollTop() > navHeight) {
+            $('.navbar-default').addClass('on');
+        } else {
+            $('.navbar-default').removeClass('on');
+        }
         var $container = $('.portfolio-items');
         $container.isotope({
             filter: '*',
