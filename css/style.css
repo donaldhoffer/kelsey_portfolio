@@ -14,10 +14,19 @@ h2 {
 	color: #333;
 	text-transform: uppercase;
 }
+#about h2 {
+	color: #fff;
+}
 h3 {
 	font-size: 22px;
 	font-weight: 500;
 	color: #333;
+}
+#about h3 {
+	color: #fff;
+}
+.case_study .about-text h3 {
+	color: #fff;
 }
 h4 {
 	font-size: 24px;
@@ -33,6 +42,9 @@ h5 {
 p {
 	font-size: 17px;
 }
+ul li{
+	font-size: 17px;
+}
 p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
@@ -41,9 +53,15 @@ a {
 	color: #333;
 	font-weight: 400;
 }
+.case_study a {
+	color: #a7c44c;
+}
 a:hover, a:focus {
 	text-decoration: none;
 	color: #222;
+}
+.case_study a:hover, a:focus {
+	color: #fff;
 }
 ul, ol {
 	list-style: none;
@@ -153,7 +171,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 14px 20px;
 	margin: 0;
 	font-size: 17px;
-	border-radius: 12px 0 12px 0;
+	border-radius: 0px;
 	margin-top: 20px;
 	transition: all 0.5s;
 }
@@ -166,15 +184,21 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center bottom;
+	background: url(../img/cairn-fog-mystical-background-158607.jpeg) no-repeat center bottom;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
+.case_study .intro {
+	background: url(../img/fre-sonneveld-powerlines.jpg) no-repeat center bottom;
+}
 .intro .overlay {
 	background: rgba(0,0,0,0.40);
+}
+.home .intro .overlay {
+	padding: 100px 0;
 }
 .intro h1 {
 	color: #fff;
@@ -202,8 +226,35 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 120px 0;
-	background: #f6f6f6;
+	padding:  0;
+	color: #fff;
+	background: #a7c44c url(../img/pexels-photo-26559.jpg) center top no-repeat;
+	background-size: cover;
+}
+.case_study .cs_img {
+	padding: 0;
+	background: #555;
+}
+.cs_txt.dark {
+	background: #555;
+}.cs_txt.dark .section-title{
+	margin-bottom: 0px;
+	color: #fff;
+}
+.case_study .cs_txt .section-title {
+	margin-bottom: 0px;
+}
+.case_study .cs_img img{
+	display: block;
+	border-radius: 0;
+	box-shadow: 0px 0 #000;
+	margin: 0 auto;
+	width: 75%;
+	padding: 5% 0;
+}
+#about .overlay {
+	padding: 145px 0;
+	background: rgba(0,0,0,0.50);
 }
 #about h3 {
 	font-size: 20px;
@@ -222,6 +273,9 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 }
+#about .drop {
+	padding-top: 35px;
+}
 /* Services Section */
 #services {
 	padding: 120px 0;
@@ -235,6 +289,22 @@ header .intro-text {
 	box-shadow: 15px 0 #a7c44c;
 }
 #services h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+/* Research Section */
+.cs_txt {
+	padding: 120px 0;
+}
+.cs_txt .service {
+	padding-left: 40px;
+}
+.cs_txt img {
+	width: 300px;
+	border-radius: 75px 0 75px 0;
+	box-shadow: 15px 0 #a7c44c;
+}
+.cs_txt h3 {
 	padding: 10px 0;
 	text-transform: uppercase;
 }
@@ -310,21 +380,42 @@ ol.type li a:hover {
 	overflow: hidden;
 	position: relative;
 }
+.cs_img .hover-bg {
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.cs_img .hover-bg .hover-text {
+	height: 7%;
+	text-align: left;
+	padding: 0;
+	width: 75%;
+	margin: 0 12.5%;
+	opacity: 1;
+	background: rgba(255, 255, 255, 0);
+	color: #fff;
+}
+.cs_img .hover-bg .hover-text->h4 {
+	opacity: 1;
+}
 .portfolio-item img {
-	border-radius: 0 50px 0 50px;
+	/*border-radius: 0 50px 0 50px;*/
 }
 .hover-bg .hover-text {
 	position: absolute;
 	text-align: center;
-	margin: 0 auto;
+	margin: auto;
 	color: #333;
 	background: rgba(255, 255, 255, 0.75);
-	padding: 30% 0 0 0;
-	height: 100%;
+	padding: 5% 0 0 0;
+	height: 30%;
 	width: 100%;
 	opacity: 0;
 	transition: all 0.5s;
-	border-radius: 0 50px 0 50px;
+	bottom: 0;
+	/*border-radius: 0 50px 0 50px;*/
 }
 .hover-bg .hover-text>h4 {
 	opacity: 0;
@@ -342,6 +433,17 @@ ol.type li a:hover {
 	transform: translateY(0);
 }
 .hover-bg:hover .hover-text {
+	opacity: 1;
+}
+.cs_img .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	color: #fff;
+	text-transform: none;
+}
+.cs_img:hover .hover-text {
 	opacity: 1;
 }
 /* Team Section */
