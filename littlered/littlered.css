@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container {
+	width: 1024px;
+	height: 768px;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+	position: absolute;
+	overflow:hidden;
+	-moz-user-select     : none;
+ 	-khtml-user-select   : none;
+ 	-webkit-user-select  : none;
+ 	-o-user-select       : none;
+ 	user-select          : none;
+}
+#scene{
+	width:1024px;
+	height:768px;
+	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+	position:absolute;
+}
+#titlepage {
+	left: 0px;
+	top: 0px;
+}
+#scene {
+	left: 0px;
+	top: 0px;
+}
+
+/* GAME CONTROLS ------------------------------------------------------------------------------------------------------------*/
+
+.littlered {
+	width: 108px;
+	height: 124px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-image: url(images/littlered.png);
+	visibility: hidden;
+}
+.healthBar_empty {
+	width: 207px;
+	height: 30px;
+	position: absolute;
+	top: 90px;
+	right: 80px;
+	background-color: #FFF;
+	border: 3px solid #FFF;
+    border-radius: 15px;
+	padding: 2px;
+	visibility: hidden;
+}
+.healthBar_fill {
+	width: 200px;
+	height: 24px;
+	position: relative;
+	float: right;
+	background-color: #BE1E2D;
+	border: 3px solid #BE1E2D;
+    border-radius: 10px;
+	visibility: hidden;
+}
+.inventory {
+	width: 596px;
+	height: 49px;
+	position: relative;
+	margin: -80px auto;
+	background-color: #BE1E2D;
+	border: 3px solid #FFF;
+    border-radius: 15px;
+	visibility: hidden;
+}
+.item {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	float: left;
+	margin: 7px 0px 7px 7px;
+	visibility: hidden;
+}
+.clock {
+	width: 69px;
+	height: 67px;
+	position: absolute;
+	top: 154px;
+	right: 38px;
+	visibility: hidden;
+}
+.clock p {
+	position: absolute;
+	top: 10px;
+	right: 16px;
+	font-size: 16px;
+	font-weight: 900;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	color: #1C0200;
+	visibility: hidden;
+}
+.menu {
+	background-image: url(images/menu.png);
+	width: 140px;
+	height: 77px;
+	position: absolute;
+	top: 605px;
+	left: 210px;
+	visibility: hidden;
+}
+.menu_use {
+	background-image:url(images/menu_use.png);
+	width: 70px;
+	height: 77px;
+	position: relative;
+	float: left;
+	visibility: hidden;
+}
+.menu_drop {
+	background-image: url(images/menu_drop.png);
+	width: 70px;
+	height: 77px;
+	position: relative;
+	float: left;
+	visibility: hidden;
+}
+.arrow {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	bottom: 38px;
+	right: 40px;
+	visibility: hidden;
+}
+.playButton {
+	width: 200px;
+	height: 50px;
+	top: 625px;
+	left: 400px;
+	position: absolute;
+	background-color: #BE1E2D;
+	border: 5px solid #fff;
+    border-radius: 10px;
+}
+.playButton p {
+	font-size: 24px;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	color: #FFF;
+	text-decoration:none;
+	text-align: center;
+	margin: 15px;
+}
+
+/* OTHER---------------------------------------------------------------------------------------------------------------*/
+
+.scene_background {
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+}
+.buildfire {
+	background-image: url(images/buildfire.png);
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+	visibility: hidden;
+}
+
+.slash_attack {
+	width: 1024px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	position:absolute;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.alert {
+	width: 259px;
+	height: 94px;
+	top: 337px;
+	left: 382.5px;
+	position:absolute;
+	visibility: hidden;
+	pointer-events: none;
+}
+/* SCENE 1 ------------------------------------------------------------------------------------------------------------*/
+
+.scene1_bushes {
+	width: 178px;
+	height: 97px;
+	position: absolute;
+	top: 570px;
+	left: 800px;
+	visibility: hidden;
+}
+.scene1_sticks {
+	width: 116px;
+	height: 53px;
+	position: absolute;
+	top: 540px;
+	left: 30px;
+	visibility: hidden;
+}
+.scene1_apple1 {
+	width: 38px;
+	height: 41px;
+	position: absolute;
+	top: 625px;
+	left: 145px;
+	visibility: hidden;
+}
+.scene1_apple2 {
+	width: 38px;
+	height: 40px;
+	position: absolute;
+	top: 585px;
+	left: 250px;
+	visibility: hidden;
+}
+	
+/* SCENE 2 ------------------------------------------------------------------------------------------------------------*/
+
+.scene2_bushes {
+	width: 125px;
+	height: 68px;
+	position: absolute;
+	top: 215px;
+	left: 840px;
+	visibility: hidden;
+}
+.scene2_frog {
+	width: 62px;
+	height: 46px;
+	position: absolute;
+	top: 625px;
+	right: 175px;
+	visibility: hidden;
+}
+
+/* SCENE 3 ------------------------------------------------------------------------------------------------------------*/
+
+.scene3_sticks {
+	width: 181px;
+	height: 82px;
+	position: absolute;
+	top: 590px;
+	left: 200px;
+	visibility: hidden;
+}
+.scene3_apple {
+	width: 47px;
+	height: 50px;
+	position: absolute;
+	top: 575px;
+	left: 610px;
+	visibility: hidden;
+}
+
+/* SCENE 4 ------------------------------------------------------------------------------------------------------------*/
+
+.scene4_wolf {
+	background-image: url(images/scene4_wolf.png);
+	width: 186px;
+	height: 263px;
+	position: absolute;
+	top: 375px;
+	left: 460px;
+	visibility: hidden;
+}
+.scene4_wolf_blood {
+	background-image: url(images/scene4_wolf_blood.png);
+	width: 186px;
+	height: 263px;
+	position: absolute;
+	top: 375px;
+	left: 460px;
+	visibility: hidden;
+}
+
+/* SCENE 5 ------------------------------------------------------------------------------------------------------------*/
+
+.scene5_sticks {
+	width: 133px;
+	height: 70px;
+	position: absolute;
+	top: 635px;
+	left: 80px;
+	visibility: hidden;
+}
+.scene5_mushrooms {
+	background-image: url(images/scene5_mushrooms.png);
+	width: 67px;
+	height: 64px;
+	position: absolute;
+	top: 575px;
+	left: 350px;
+	visibility: hidden;
+}
+
+/* SCENE 6 ------------------------------------------------------------------------------------------------------------*/
+
+.scene6_frog {
+	width: 62px;
+	height: 47px;
+	position: absolute;
+	top: 435px;
+	left: 310px;
+	visibility: hidden;
+}
+
+/* SCENE 7 ------------------------------------------------------------------------------------------------------------*/
+
+.scene7_sticks {
+	width: 172px;
+	height: 78px;
+	position: absolute;
+	top: 580px;
+	left: 660px;
+	visibility: hidden;
+}
+.scene7_mushrooms {
+	width: 66px;
+	height: 64px;
+	position: absolute;
+	top: 550px;
+	left: 420px;
+	visibility: hidden;
+}
+.scene7_wolf {
+	background-image: url(images/scene7_wolf.png);
+	width: 186px;
+	height: 262px;
+	position: absolute;
+	top: 400px;
+	left: 220px;
+	visibility: hidden;
+}
+.scene7_wolf_blood {
+	background-image: url(images/scene7_wolf_blood.png);
+	width: 186px;
+	height: 262px;
+	position: absolute;
+	top: 400px;
+	left: 220px;
+	visibility: hidden;
+}
+
+/* SCENE 8 ------------------------------------------------------------------------------------------------------------*/
+
+.scene8_bushes {
+	background-image: url(images/scene8_bushes.png);
+	width: 213px;
+	height: 105px;
+	position: absolute;
+	top: 550px;
+	left: 30px;
+	visibility: hidden;
+}
+
+/* SCENE 9 ------------------------------------------------------------------------------------------------------------*/
+
+.scene9_sticks {
+	width: 111px;
+	height: 44px;
+	position: absolute;
+	top: 600px;
+	left: 260px;
+	visibility: hidden;
+}
+.scene9_bluebushes {
+	width: 168px;
+	height: 84px;
+	position: absolute;
+	top: 510px;
+	left: 460px;
+	visibility: hidden;
+}
+
+/* SCENE 10 ------------------------------------------------------------------------------------------------------------*/
+
+.scene10_wolf {
+	background-image: url(images/scene10_wolf.png);
+	width: 211px;
+	height: 300px;
+	position: absolute;
+	top: 360px;
+	left: 440px;
+	visibility: hidden;
+}
+.scene10_wolf_blood {
+	background-image: url(images/scene10_wolf_blood.png);
+	width: 211px;
+	height: 300px;
+	position: absolute;
+	top: 360px;
+	left: 440px;
+	visibility: hidden;
+}
+
+/* SHAKE ------------------------------------------------------------------------------------------------------------*/
+
+
+@keyframes spaceboots {
+	0% { transform: translate(2px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(0px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(2px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(2px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-moz-keyframes spaceboots {
+	0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -moz-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-ms-keyframes spaceboots {
+	0% { -ms-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -ms-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -ms-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -ms-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -ms-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -ms-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -ms-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -ms-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -ms-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -ms-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -ms-transform: translate(1px, -2px) rotate(-1deg); }
+}
+@-o-keyframes spaceboots {
+	0% { -o-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -o-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -o-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -o-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -o-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -o-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -o-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -o-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -o-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -o-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -o-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus
+{
+	animation-name: spaceboots;
+	animation-duration: 0.8s;
+	transform-origin:50% 50%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	-ms-animation-name: spaceboots;
+	-ms-animation-duration: 0.8s;
+	-ms-transform-origin:50% 50%;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+
+	-moz-animation-name: spaceboots;
+	-moz-animation-duration: 0.8s;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+
+	-o-animation-name: spaceboots;
+	-o-animation-duration: 0.8s;
+	-o-transform-origin:50% 50%;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+}
+
+/* SPIN OUT ---------------------------------------------------------------------------------------------------------*/
+.spin_out{
+  -webkit-animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes animationFrames {
+  0%   {opacity:1;
+        -webkit-transform:  translate(-22px,-24px)  rotate(0deg) ;}
+  100% {opacity:0;
+        -webkit-transform:  translate(-22px,-24px)  rotate(800deg) ;}
+}
+

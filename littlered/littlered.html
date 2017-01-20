@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Little Red</title>
+
+<link href="littlered.css" rel="stylesheet" type="text/css">
+<script type='text/javascript' src='_js/scripts.js' ></script>
+
+
+</head>
+
+<body onLoad="clearInv()">
+
+<div id="container">
+
+	<div id="scene" unselectable='on'>
+    
+<!--BACKGROUND--------------------------------------------------------------------------------------->
+    	<img id="scene_background" src="images/titlepage.png">
+    
+<!--PLAY BUTTON-------------------------------------------------------------------------------------->
+        <div onClick="nextScene()" class="playButton"><p>PLAY GAME</p>
+        </div>
+    
+<!--SCENE1------------------------------------------------------------------------------------------->        
+        <div onClick="searchThing()" class="scene1_bushes shake">
+        <img src="images/scene1_bushes.png">
+        </div>
+        <div onClick="addItem('Sticks','scene1_sticks')" class="scene1_sticks shake">
+        <img src="images/scene1_sticks.png">
+        </div>
+        <div onClick="addItem('Apple','scene1_apple1')" class="scene1_apple1 shake">
+        <img src="images/scene1_apple1.png">
+        </div>
+        <div onClick="addItem('Apple','scene1_apple2')" class="scene1_apple2 shake">
+        <img src="images/scene1_apple2.png">
+        </div>
+    
+<!--SCENE2------------------------------------------------------------------------------------------>        
+        <div onClick="searchThing()" class="scene2_bushes shake">
+        <img src="images/scene2_bushes.png">
+        </div>
+        <div onClick="addItem('Frog','scene2_frog')" class="scene2_frog shake">
+        <img src="images/scene2_frog.png">
+        </div>
+    
+<!--SCENE3------------------------------------------------------------------------------------------>        
+        <div onClick="addItem('Apple','scene3_apple')" class="scene3_apple shake">
+        <img src="images/scene3_apple.png">
+        </div>
+        <div onClick="addItem('Sticks','scene3_sticks')" class="scene3_sticks shake">
+        <img src="images/scene3_sticks.png">
+        </div>
+    
+<!--SCENE4------------------------------------------------------------------------------------------>        
+        <div class="scene4_wolf">
+        </div>
+        <div class="scene4_wolf_blood">
+        </div>
+    
+<!--SCENE5------------------------------------------------------------------------------------------>        
+    	<div onClick="addItem('Mushrooms','scene5_mushrooms')" class="scene5_mushrooms shake">
+        <img src="images/scene5_mushrooms.png">
+    	</div>
+    	<div onClick="addItem('Sticks','scene5_sticks')" class="scene5_sticks shake">
+        <img src="images/scene5_sticks.png">
+    	</div>
+    
+<!--SCENE6------------------------------------------------------------------------------------------>        
+        <div onClick="addItem('Frog','scene6_frog')" class="scene6_frog shake">
+        <img src="images/scene6_frog.png">
+        </div>
+    
+<!--SCENE7------------------------------------------------------------------------------------------>        
+        <div onClick="addItem('Mushrooms','scene7_mushrooms')" class="scene7_mushrooms shake">
+        <img src="images/scene7_mushrooms.png">
+        </div>
+        <div onClick="addItem('Sticks','scene7_sticks')" class="scene7_sticks shake">
+        <img src="images/scene7_sticks.png">
+        </div>
+        <div class="scene7_wolf">
+        </div>
+        <div class="scene7_wolf_blood">
+        </div>
+    
+<!--SCENE8------------------------------------------------------------------------------------------>        
+        <div onClick="searchThing()" class="scene8_bushes shake">
+        </div>
+    
+<!--SCENE9------------------------------------------------------------------------------------------>        
+        <div onClick="addItem('Blueberries','scene9_bluebushes')" class="scene9_bluebushes shake">
+        <img src="images/scene9_bluebushes.png">       
+        </div>
+        <div onClick="addItem('Sticks','scene9_sticks')" class="scene9_sticks shake">
+        <img src="images/scene9_sticks.png">
+        </div>
+    
+<!--SCENE10------------------------------------------------------------------------------------------>       
+        <div class="scene10_wolf_blood">
+        </div>
+        <div class="scene10_wolf">
+        </div>
+        <div id="slashed" class="wolf_slash">
+        </div>
+        
+<!--MENU--------------------------------------------------------------------------------------------->        
+        <div class="menu">
+        	<div onClick="itemUse()" class="menu_use">
+        	</div>
+        	<div  onClick="itemDrop()"class="menu_drop">
+        	</div>
+         </div>
+    
+<!--NEXT SCENE ARROW--------------------------------------------------------------------------------->
+        <div onClick="nextScene()" class="arrow">
+        	<img id="arrow" src="images/arrow.png" alt="Arrow" style"width:56px;height:42px">
+        </div>
+    
+<!--HEALTH BAR--------------------------------------------------------------------------------------->
+        <div class="healthBar_empty">
+        	<div class="healthBar_fill">
+        	</div>
+        </div>
+     
+<!--INVENTORY---------------------------------------------------------------------------------------->       
+    	<div class="inventory">
+        	<div class="item">
+            	<img onClick="popMenu(1)" id="item_1" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(2)" id="item_2" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(3)" id="item_3" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(4)" id="item_4" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(5)" id="item_5" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(6)" id="item_6" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(7)" id="item_7" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(8)" id="item_8" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(9)" id="item_9" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(10)" id="item_10" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(11)" id="item_11" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div> 
+            <div class="item">
+            	<img onClick="popMenu(12)" id="item_12" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(13)" id="item_13" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+            <div class="item">
+            	<img onClick="popMenu(14)" id="item_14" src="images/item_blank.png" alt="Empty" style="width:35px;height:35px">
+            </div>
+    	</div>
+    
+<!--LITTLERED LOGO----------------------------------------------------------------------------------->        
+        <div class="littlered">
+        </div>
+    
+<!--CLOCK-------------------------------------------------------------------------------------------->        
+        <div class="clock">
+        	<img id="clock" src="images/clock_4.png" alt="Clock" style"width:69px;height:67px">
+            <p>Day 1</p>
+        </div>
+        
+<!--FIRE--------------------------------------------------------------------------------------------->
+		<div class="buildfire">
+        </div>
+
+<!--SLASH-------------------------------------------------------------------------------------------->
+        <div class="slash_attack">
+        	<img id="slash_attack" src="images/wolf_slash.gif" alt="Slash">
+        </div>
+        
+<!--ALERT-------------------------------------------------------------------------------------------->
+		<div class="alert">
+        	<img id="alert" src="images/alert/found_apple_alert.png">
+        </div>
+        
+    </div>
+    
+</div>  
+
+
+</body>
+</html>

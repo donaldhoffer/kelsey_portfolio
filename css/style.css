@@ -28,6 +28,9 @@ h3 {
 .case_study .about-text h3 {
 	color: #fff;
 }
+.case_study.controller .cs_txt .about-text h3 {
+	color: #333;
+}
 h4 {
 	font-size: 24px;
 	text-transform: uppercase;
@@ -184,18 +187,27 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/cairn-fog-mystical-background-158607.jpeg) no-repeat center bottom;
+	background: url(../img/fern-background-bw.jpg) no-repeat center bottom;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
-.case_study .intro {
+.case_study.dlc .intro {
 	background: url(../img/fre-sonneveld-powerlines.jpg) no-repeat center bottom;
 }
+.case_study.littlered .intro {
+	background: url(../img/pexels-photo.jpg) no-repeat center bottom;
+}
+.case_study.controller .intro {
+	background: url(../img/controller_prototype_small.jpg) no-repeat center bottom;
+}
 .intro .overlay {
-	background: rgba(0,0,0,0.40);
+	background: rgba(0,0,0,0.50);
+}
+.case_study .intro .overlay {
+	padding: 20px;
 }
 .home .intro .overlay {
 	padding: 100px 0;
@@ -228,7 +240,7 @@ header .intro-text {
 #about {
 	padding:  0;
 	color: #fff;
-	background: #a7c44c url(../img/pexels-photo-26559.jpg) center top no-repeat;
+	background: #a7c44c url(../img/leaf-background-bw.jpg) center top no-repeat;
 	background-size: cover;
 }
 .case_study .cs_img {
@@ -251,6 +263,9 @@ header .intro-text {
 	margin: 0 auto;
 	width: 75%;
 	padding: 5% 0;
+}
+.case_study.littlered .cs_img img{
+	width: 60%;
 }
 #about .overlay {
 	padding: 145px 0;
@@ -295,6 +310,15 @@ header .intro-text {
 /* Research Section */
 .cs_txt {
 	padding: 120px 0;
+}
+.controller .cs_txt {
+	padding: 60px 0;
+}
+.controller .cs_txt.top {
+	padding: 60px 0 0 0;
+}
+.controller .cs_txt.bot {
+	padding: 0 0 60px 0;
 }
 .cs_txt .service {
 	padding-left: 40px;
@@ -397,6 +421,9 @@ ol.type li a:hover {
 	background: rgba(255, 255, 255, 0);
 	color: #fff;
 }
+.littlered .cs_img .hover-bg .hover-text {
+	margin: 0 20%;
+}
 .cs_img .hover-bg .hover-text->h4 {
 	opacity: 1;
 }
@@ -491,6 +518,21 @@ ol.type li a:hover {
 }
 #contact form {
 	padding: 30px 0;
+}
+#contact .about-text {
+	text-align: right;
+}
+#contact .social a {
+	font-size: 24px;
+}
+#contact .service {
+	text-align: center;
+}
+#contact .service.left {
+	text-align: left;
+}
+#contact .service.right {
+	text-align: right;
 }
 #contact h3 {
 	text-transform: uppercase;
